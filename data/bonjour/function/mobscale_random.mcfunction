@@ -1,4 +1,9 @@
+
 scoreboard players random #rand mobscale_random 0 9
+
+execute as @e[type=armor_stand,tag=mobscale_random,limit=1] at @s run spreadplayers 0 0 0 100 false @s
+execute as @e[type=armor_stand,tag=mobscale_random,limit=1] store result score #rand mobscale_random run data get entity @s Pos[0] 1
+scoreboard players operation #rand mobscale_random %= $max mobscale_random
 execute if score #rand mobscale_random matches 0 run function bonjour:setsize_0_2
 execute if score #rand mobscale_random matches 1 run function bonjour:setsize_0_6
 execute if score #rand mobscale_random matches 2 run function bonjour:setsize_1_0
