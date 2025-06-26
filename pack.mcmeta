@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 71,
+    "description": "Affiche 'bonjour monde rouge' toutes les 15 secondes en rouge (par datapack, 1.21.5)"
+  }
+}

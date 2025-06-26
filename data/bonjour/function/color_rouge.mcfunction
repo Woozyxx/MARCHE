@@ -1,0 +1,1 @@
+tellraw @a {"text":"bonjour monde arc-en-ciel","color":"red"}
