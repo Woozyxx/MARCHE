@@ -1,3 +1,1 @@
-scoreboard players add #mobtimer mobscale_timer 1
-execute if score #mobtimer mobscale_timer matches 300 run function bonjour:mobscale_random
-execute if score #mobtimer mobscale_timer matches 301 run scoreboard players set #mobtimer mobscale_timer 0
+execute as @e[type=!player,type=!armor_stand,type=!marker,tag=!mobscale_ignore,tag=!mobscale_scaled] at @s run function bonjour:mobscale_random
