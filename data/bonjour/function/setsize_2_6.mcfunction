@@ -1,1 +1,1 @@
-execute as @e[type=!player,type=!armor_stand,type=!marker,tag=!mobscale_ignore] run attribute @s minecraft:scale base set 2.6
+execute unless entity @s[tag=mobscale_ignore] run attribute @s minecraft:scale base set 2.6
